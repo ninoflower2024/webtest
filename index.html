@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고려사이버대학교 홍보 웹앱</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .cta-btn {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-transform: uppercase;
+        }
+        .cta-btn:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">고려사이버대학교</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">학교 소개</a></li>
+                <li class="nav-item"><a class="nav-link" href="#programs">전공 과정</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">문의하기</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>고려사이버대학교</h1>
+        <p>미래를 준비하는 최고의 온라인 교육</p>
+        <a href="#contact" class="btn cta-btn">문의하기</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">학교 소개</h2>
+        <p class="text-center">고려사이버대학교는 첨단 IT와 AI 융합 교육을 통해 혁신적인 학습 환경을 제공합니다. <br> 글로벌 학습 네트워크와 실무 중심의 교육으로 미래를 준비하세요.</p>
+    </div>
+</section>
+
+<!-- Programs Section -->
+<section id="programs" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">전공 과정</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">AI 융합 전공</h5>
+                        <p class="card-text">AI 기술과 산업 응용을 배우는 최고의 선택.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">IT 융합 전공</h5>
+                        <p class="card-text">IT 기술을 통해 디지털 미래를 준비하세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">디지털 마케팅 전공</h5>
+                        <p class="card-text">디지털 시대의 새로운 마케팅 전략을 배우세요.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">문의하기</h2>
+        <p class="text-center">이메일: <a href="mailto:global@kocw.ac.kr">global@kocw.ac.kr</a> | 전화: 02-1234-5678</p>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">이름</label>
+                <input type="text" class="form-control" id="name" placeholder="이름을 입력하세요">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">이메일</label>
+                <input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">문의 내용</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="문의 내용을 입력하세요"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">문의 보내기</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-3 text-center">
+    <p>&copy; 2024 고려사이버대학교. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
